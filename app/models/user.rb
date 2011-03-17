@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
 
   before_create :set_email_if_empty
   def set_email_if_empty
-    self.email = "#{self.name}@me.com" if self.email.empty?
+    self.email = "#{self.name}@me.com" if self.email.blank?
   end
 
 end
