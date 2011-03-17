@@ -6,6 +6,23 @@ gem 'rails', '3.0.5'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'haml'
+
+group :development do
+  gem 'mongrel'
+end
+
+group :test do
+  gem 'test-unit', '2.1.1', :require => false
+  gem 'capybara'
+  gem 'capybara-zombie', :git => "https://github.com/plataformatec/capybara-zombie.git"
+  gem 'launchy'
+  gem 'mocha', '>=0.9.11', :require => false
+  gem 'factory_girl_rails'
+  gem 'timecop'
+  gem 'fakeweb'
+  gem "contest"
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'
