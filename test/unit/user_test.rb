@@ -2,7 +2,7 @@ require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
 
-  test "test factories" do
+  test "factories" do
     Factory :user
     assert_equal 1, User.all.count
   end

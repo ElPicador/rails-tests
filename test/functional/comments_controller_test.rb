@@ -1,8 +1,9 @@
 require 'test_helper'
 
 class CommentsControllerTest < ActionController::TestCase
+  
   setup do
-    @comment = comments(:one)
+    @comment = Factory :comment
   end
 
   test "should get index" do
