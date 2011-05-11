@@ -14,4 +14,7 @@ class UserTest < ActiveSupport::TestCase
     user = Factory :user, :email => nil, :name => "titi"
     assert_equal "titi@me.com", user.email
   end
+  
+  should have_many(:posts)
+  
 end

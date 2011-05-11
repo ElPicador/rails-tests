@@ -1,9 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.5'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'rails', '3.0.7'
 
 gem 'sqlite3'
 gem 'haml'
@@ -21,7 +18,7 @@ group :test do
   gem 'factory_girl_rails'
   gem 'timecop'
   gem 'fakeweb'
-  gem "contest"
+  gem 'shoulda', "2.11.3"  
 end
 
 # Use unicorn as the web server
