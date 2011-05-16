@@ -16,5 +16,11 @@ class UserTest < ActiveSupport::TestCase
   end
   
   should have_many(:posts)
+  should have_many(:comments)
+  
+  describe User do
+    before(:each) { Factory :user }
+    should validate_uniqueness_of(:name)
+  end
   
 end
