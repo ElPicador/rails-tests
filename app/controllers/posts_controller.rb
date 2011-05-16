@@ -1,4 +1,7 @@
 class PostsController < ApplicationController
+  autocomplete :user, :name
+  
+  
   # GET /posts
   # GET /posts.xml
   def index

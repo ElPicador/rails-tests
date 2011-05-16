@@ -4,7 +4,8 @@ gem 'rails', '3.0.7'
 
 gem 'sqlite3'
 gem 'haml'
-gem 'jquery-rails', '>= 0.2.6'
+gem 'jquery-rails', '0.2.7'
+gem 'rails3-jquery-autocomplete', '0.7.3'
 
 group :development do
   gem 'mongrel'
