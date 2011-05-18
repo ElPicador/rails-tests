@@ -20,7 +20,10 @@ group :test do
   
   #Integration tests
   gem 'capybara', '0.4.1.2'
+  gem 'capybara-envjs', :git => "https://github.com/smparkes/capybara-envjs.git"
   gem 'capybara-zombie', :git => "https://github.com/plataformatec/capybara-zombie.git"
+  gem 'akephalos'
+  gem "capybara-webkit"  
   gem 'webrat', '0.7.3'
   gem 'launchy'
 
