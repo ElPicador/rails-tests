@@ -20,16 +20,16 @@ class CapybraTest < ActionDispatch::IntegrationTest
     assert_true page.has_content?("Post was successfully created.")
   end
   
-  test "javascript" do
-    user1 = Factory :user, :name => "Harmonica"
-    post = Factory :post, :user => @user
-    visit edit_post_path(post)
-    save_and_open_page
-    fill_in "User", :with => "Har"
-    click_link "Harmonica"
-    click_button "Update Post"
-    
-    assert_equal @user, post.reload.user
-  end
+  # test "javascript" do
+  #   user1 = Factory :user, :name => "Harmonica"
+  #   post = Factory :post, :user => @user
+  #   visit edit_post_path(post)
+  #   save_and_open_page
+  #   fill_in "User", :with => "Har"
+  #   click_link "Harmonica"
+  #   click_button "Update Post"
+  #   
+  #   assert_equal @user, post.reload.user
+  # end
   
 end

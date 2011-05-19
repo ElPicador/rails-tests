@@ -10,7 +10,7 @@ require 'akephalos'
 # Capybara.default_driver = :akephalos
 # Capybara.default_driver = :envjs
 # Capybara.default_driver = :zombie
-Capybara.default_driver = :webkit
+# Capybara.default_driver = :webkit
 
 class ActiveSupport::TestCase
   # Add more helper methods to be used by all tests here...
